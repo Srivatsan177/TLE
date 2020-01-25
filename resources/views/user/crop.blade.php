@@ -90,7 +90,7 @@
                     console.log(result);
                     $.ajax({
                         url:"/predict",
-                        data:{temp:result['main']['temp'],hum:result['main']['humidity'],quat:"1",lat:1,loamy:0,sandy:0},
+                        data:{temp:result['main']['temp'],hum:result['main']['humidity'],quat:"1",lat:0,loamy:1,sandy:0},
                         success:function(result){
                             $("#prediction").html("Our Suggestion is grow "+result+"for better output");
                         },

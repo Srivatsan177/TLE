@@ -156,7 +156,7 @@ class AdminController extends Controller
 
      public function predict(Request $request){
         $hum=$request->input("hum");
-        $rainfall="569";
+        $rainfall="169";
         $temp=$request->input("temp");
         $lat=$request->input("lat");
         $loamy=$request->input("loamy");
